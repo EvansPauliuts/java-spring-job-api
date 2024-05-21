@@ -1,4 +1,4 @@
-package com.evanscode.javaspringjobapi;
+package com.evanscode;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

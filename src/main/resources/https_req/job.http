@@ -1,0 +1,36 @@
+###
+GET http://localhost:8000/jobs
+
+###
+POST http://localhost:8000/jobs
+Content-Type: application/json
+
+{
+    "title": "Software Engineer Needed With ID 1",
+    "description": "Test description",
+    "minSalary": "30000",
+    "maxSalary": "40000",
+    "location": "New Jersey"
+}
+
+###
+GET http://localhost:8000/jobs/3
+Content-Type: application/json
+
+###
+PUT http://localhost:8000/jobs/1
+Content-Type: application/json
+
+{
+    "title": "Software Engineer Needed With ID TEST",
+    "description": "Test description",
+    "minSalary": "30000",
+    "maxSalary": "40000",
+    "location": "New Jersey"
+}
+
+###
+DELETE http://localhost:8000/jobs/2
+Content-Type: application/json
+
+###
