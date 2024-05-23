@@ -38,7 +38,7 @@ public class JobController {
     public ResponseEntity<String> deleteJob(@PathVariable Long id) {
         boolean deleted = jobService.deleteJobById(id);
         if (deleted)
-            return new ResponseEntity<>("Job deleted succesfully", HttpStatus.NO_CONTENT);
+            return new ResponseEntity<>("Job deleted successfully", HttpStatus.NO_CONTENT);
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
@@ -46,7 +46,7 @@ public class JobController {
     public ResponseEntity<String> updateJob(@PathVariable Long id, @RequestBody Job updateJob) {
         boolean updated = jobService.updateJob(id, updateJob);
         if (updated)
-            return new ResponseEntity<>("Job updated succesfully", HttpStatus.OK);
+            return new ResponseEntity<>("Job updated successfully", HttpStatus.OK);
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 }
